@@ -7,6 +7,4 @@ const conexao = require('./conexao')
 conexao()
 const rota = require('./rotas')
 app.use(rota)
-
-
 const PORT = process.env.PORT || 4000;
