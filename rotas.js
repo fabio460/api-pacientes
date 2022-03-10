@@ -20,7 +20,9 @@ const config ={
 
 
 
-
+rota.get('/',(req,res)=>{
+    res.send('Bem Vindo a nossa Api')
+})
 rota.get('/pacientes',controllerPaciente.getClientes)
 rota.post('/indicepulm',multer(config).single(),controllerPaciente.getIndicePulmonar)
 rota.post('/indicecard',multer(config).single(),controllerPaciente.getIndiceCardiaco)
