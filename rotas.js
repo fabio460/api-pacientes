@@ -21,7 +21,7 @@ const config ={
 
 
 rota.get('/',(req,res)=>{
-    res.send('<h1 style={{text-align:center}}>Bem Vindo a nossa Api</h1>')
+    res.send('<h1 style={{ text-align: center}}>Bem Vindo a nossa Api</h1>')
 })
 rota.get('/pacientes',controllerPaciente.getClientes)
 rota.post('/indicepulm',multer(config).single(),controllerPaciente.getIndicePulmonar)
